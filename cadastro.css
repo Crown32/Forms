@@ -1,0 +1,82 @@
+/*Formatação geral*/
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Formatação do body*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+h1{
+    color: rgb(245, 245, 245);
+}
+
+/*Formatação fieldset*/
+
+fieldset{
+    border-radius: 5px;
+    border: black solid 2px;
+    padding: 20px;
+    color: rgb(245, 245, 245);
+}
+
+legend{
+    font-size: 23px;
+}
+
+.opcional{
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.link{
+    color: #03CFFA;
+}
+
+.link:hover{
+    color: #a7f0ff;
+}
+
+input{
+    width: 200px;
+    border-radius: 2px;
+    border: black solid 1px;
+}
+
+textarea{
+    border-radius: 5px;
+    font-size: 15px;
+    border: black solid 1px;
+}
+
+#newspapper, #termos,.data{
+    width: unset;
+}
+
+/*Botão submit*/
+.enviar{
+    font-size: 16px;
+    width: 100px;
+    padding: 8px 12px;
+    cursor: pointer;
+
+}
+
+.enviar:hover{
+    transition: .2s;
+    border-radius: 5px;
+    background-color: #32B4E6;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+
+    <form>
+        <fieldset> <!-- Dados pessoais -->
+            <legend>Dados pessoais</legend>
+            <p>Nome: <input type="text" class="nome" placeholder="Digite seu nome completo" required></p>
+            <p>Email: <input type="email" placeholder="Digite seu email para contato" required></p>
+            <p>Celular: <input type="text" placeholder="Ex: (31) 12345-6789"> <a class="opcional"> *opcional</a></p>
+        <p>Sexo: <select>
+            <option value="">Selecione uma opção</option>
+            <option value="1">Feminino</option>
+            <option value="2">Masculino</option>
+            <option value="3">Prefiro não informar</option>
+        </select></p>
+        <p>Data de nascimento: <input class="data" type="date" required></p>
+        <p>Estado civil: <select>
+            <option value="">Selecione uma opção</option>
+            <option value="1">Casado</option>
+            <option value="2">Solteiro</option>
+            <option value="3">Divorciado</option>
+            <option value="4">Prefiro não informar</option>
+        </select></p>
+        </fieldset>
+        <br>
+        <fieldset id="endereco"> <!-- Endereço -->
+            <legend>Endereço</legend>
+            <p>País: <input type="text" required></p>
+            <p>Estado: <input type="text" required></p>
+            <p>Cidade: <input type="text" required></p>
+            <p>Bairro: <input type="text"><a class="opcional"> *opcional</a></p>
+            <p>Rua: <input type="text"><a class="opcional"> *opcional</a></p>
+            <p>Número: <input type="text"><a class="opcional"> *opcional</a></p>
+        </fieldset>
+        <br>
+        <fieldset id="conta"> <!-- Dados da Conta -->
+            <legend>Dados da conta</legend>
+            <p>Nome de usuário: <input type="text" required placeholder="max: 32 caracteres" maxlength="32"></p>
+            <p>Senha: <input type="password" placeholder="max: 16 caracteres" required></p>
+            <p>Descrição do perfil:</p> 
+            <textarea cols="50" rows="10"></textarea>
+            <p><input type="checkbox" id="termos" required><label for="termos"> Aceita os <a  class="link" href="#" target="_blank">termos e condições</a> do usuário?</p></label>
+            <p><input type="checkbox" id="newspapper"><label for="newspapper"> Deseja assinar o newspapper para receber no seu email novidades sobre nossas funcionalidades?</p></label>
+            <p>Já possui uma conta? <a class="link" href="login.html">Fazer login</a></p>
+        </fieldset>
+        <br>
+        <input type="submit" class="enviar">
+    </form>
+
+
+</body>
+</html>
